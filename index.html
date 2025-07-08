@@ -101,6 +101,38 @@
   .formkit-input {
     width: 100% !important; /* Make sure it fills its container */
   }
+  
+  .share-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #171717;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #ffffff;
+  }
+
+  .share-container a img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #262626;
+    padding: 8px;
+    transition: transform 0.2s ease;
+    filter: brightness(0) invert(1); /* makes icons white */
+  }
+
+  .share-container a img:hover {
+    transform: scale(1.1);
+  }
+
+  .share-container span {
+    font-weight: 500;
+    color: #ffffff;
+  }
+
   </style>
 </head>
 <body>
@@ -114,13 +146,29 @@
   <!-- ✅ ConvertKit Embed Script -->
   <script async data-uid="37da9d862c" src="https://thenightschool.kit.com/37da9d862c/index.js"></script>
 
+
+  <!-- old social media links 
+  
   <div class="social-links">
     <a href="https://instagram.com/thenightschool.club" target="_blank">Instagram</a> |
     <a href="https://www.tiktok.com/@thenightschool.club" target="_blank">TikTok</a> |
     <a href="https://x.com/thenightschool_" target="_blank">X</a> 
-    <!-- <a href="https://substack.com/@thenightschoolclub" target="_blank">Substack</a> -->
+    <!-- <a href="https://substack.com/@thenightschoolclub" target="_blank">Substack</a> 
 
-  </div>
+  </div> --> 
+
+  <div class="share-container">
+  <span>Share this page</span>
+  <a href="https://instagram.com/thenightschool.club" target="_blank" aria-label="Instagram">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram icon" />
+  </a>
+  <a href="https://tiktok.com/@thenightschool.club" target="_blank" aria-label="TikTok">
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok icon" />
+  </a>
+  <a href="mailto:hello@thenightschool.club" aria-label="Email">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email icon" />
+  </a>
+</div>
 
 </body>
 </html>
