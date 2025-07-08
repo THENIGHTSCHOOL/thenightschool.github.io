@@ -59,6 +59,28 @@
       font-weight: bold;
       margin-top: 2rem;
     }
+  
+  /* Force input and button to be side-by-side */
+  .formkit-fields {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .formkit-field,
+  .formkit-submit {
+    margin: 0 !important;
+    flex: none !important;
+  }
+
+  .formkit-field {
+    flex-grow: 1;
+  }
+
+  .formkit-submit {
+    white-space: nowrap;
+  }
   </style>
 </head>
 <body>
