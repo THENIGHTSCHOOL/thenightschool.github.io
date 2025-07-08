@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>The Night School</title>
-
   <link rel="icon" href="favicon.png" type="image/png">
   
   <style>
@@ -44,30 +43,6 @@
       margin-bottom: 2rem;
     }
 
-    .notify-form input[type="email"] {
-      padding: 0.75rem;
-      border: none;
-      width: 250px;
-      max-width: 90%;
-      font-size: 1rem;
-      margin-right: 0.5rem;
-      border-radius: 4px;
-    }
-
-    .notify-form button {
-      padding: 0.75rem 1.25rem;
-      background-color: #093C2E;
-      border: none;
-      color: white;
-      font-size: 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .notify-form button:hover {
-      background-color: #0b6045;
-    }
-
     .social-links {
       margin-top: 2rem;
     }
@@ -84,13 +59,6 @@
       font-weight: bold;
       margin-top: 2rem;
     }
-
-    /* Countdown (commented out)
-    .countdown {
-      margin-top: 2rem;
-      color: #fff;
-    }
-    */
   </style>
 </head>
 <body>
@@ -98,57 +66,16 @@
   <h2>The Night School 🎓✏️</h2>
   <p>The Night School is a lecture series for curious minds, creative thinkers, and ambitious people who miss the intellectual thrill of the classroom. We're bringing the joy of learning back to nightlife one conversation at a time.</p>
 
-  <div class="coming-soon"> Join our mailing list. </div> 
+  <div class="coming-soon">Join our mailing list.</div>
   <br>
- 
-  <form id="email-form" class="notify-form" action="https://formspree.io/f/mblyvdwe" method="POST">
-    <input type="email" name="email" placeholder="Enter your email" required />
-    <button type="submit">Get Notified</button>
-  </form>
 
-<!-- Thank-you message (initially hidden) -->
-<p id="thank-you" style="margin-top: 1rem; color: ##178D6B; display: none;">
-  Thank you! We’ll be in touch soon.
-</p>
-
-
-
+  <!-- ✅ ConvertKit Embed Script -->
+  <script async data-uid="37da9d862c" src="https://thenightschool.kit.com/37da9d862c/index.js"></script>
 
   <div class="social-links">
     <a href="https://instagram.com" target="_blank">Instagram</a> |
     <a href="https://substack.com" target="_blank">Substack</a>
   </div>
-
-  <!--
-  <div class="countdown">
-    <p>First event starts in: <span id="timer">00d 00h 00m 00s</span></p>
-  </div>
-  <script>
-    // Countdown timer code goes here (when you're ready)
-  </script>
-  -->
-<script>
-  const form = document.getElementById('email-form');
-  const thankYou = document.getElementById('thank-you');
-
-  form.addEventListener('submit', async function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    });
-
-    if (response.ok) {
-      form.style.display = 'none';
-      thankYou.style.display = 'block';
-    } else {
-      alert("Oops! Something went wrong. Please try again.");
-    }
-  });
-</script>
 
 </body>
 </html>
