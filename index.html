@@ -106,6 +106,7 @@
     width: 100% !important; /* Make sure it fills its container */
   } --> 
 
+ <style>
   @font-face {
     font-display: block;
     font-family: Roboto;
@@ -148,38 +149,6 @@
     text-decoration: underline;
     color: #2BB2FC;
   }
-  
-  .share-container {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    background: #171717;
-    padding: 20px;
-    border-radius: 10px;
-    justify-content: center;
-    font-family: sans-serif;
-    color: #ffffff;
-  }
-
-  .share-container a img {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: #ffffff; /* white circle background */
-    padding: 8px;
-    transition: transform 0.2s ease;
-    object-fit: contain;
-  }
-
-  .share-container a img:hover {
-    transform: scale(1.1);
-  }
-
-  .share-container span {
-    font-weight: 500;
-    color: #ffffff;
-  }
-
   </style>
   <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
 </head>
@@ -191,8 +160,7 @@
 
   <p>The Night School is a lecture series for curious minds, creative thinkers, and ambitious people who miss the intellectual thrill of the classroom. We're bringing the joy of learning back to nightlife one conversation at a time.</p>
 
-  <div class="coming-soon">We saved you a seat. Join the mailing list..</div>
-<div class="sib-form" style="text-align: center;
+  <div class="sib-form" style="text-align: center;
          background-color: #171717;                                 ">
   <div id="sib-form-container" class="sib-form-container">
     <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
@@ -218,14 +186,21 @@
     </div>
     <div></div>
     <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(23,23,23,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#171717; border-style:solid; direction:ltr">
-      <form id="sib-form" method="POST" action="https://5192258c.sibforms.com/serve/MUIFANNyauGe8qvxyx2OJAaAZRkIBnGLNpE9B6BBf0jqK_MKRnt2G8p0NPU5MDR120CYi6YdXni_Q2Qcq-IMIM4p7GzKRWSRykQGoxWkgjzKqLxesVgJvN1ivNNM6GeQtzJbpNq7d9L4fAhPk_vY0XCWCi08OOLnuptw6QBsJCLAz38KU4YFUoS8tzlCT6SHxx_06Vy-5ThyENXi" data-type="subscription">
+      <form id="sib-form" method="POST" action="https://5192258c.sibforms.com/serve/MUIFAM5rZ1iql9jR_z3tBg2m3qm2XQAvpuyKObdhI33iKKq6EqjJ5GS4IPcj9yZaDJS7YEQvdClcy_21hveuZIHvRlB_BdegqYCrQZFgCI-3Od4AkjuRz7qi1ZxuDrmTqCLbAQWzXUu6XNlQb3kD0rdrzLS1C6eUujcuwNbc8qR6PLnR1DG3DHkn3ntmoM4lsJBfUiIh9N8jezwx" data-type="subscription">
+        <div style="padding: 8px 0;">
+          <div class="sib-form-block" style="font-size:25px; text-align:left; font-family:Helvetica, sans-serif; color:#1f8c6a; background-color:transparent; text-align:left">
+            <div class="sib-text-form-block">
+              <p>We saved you a seat. Join the mailing list.</p>
+            </div>
+          </div>
+        </div>
         <div style="padding: 8px 0;">
           <div class="sib-input sib-form-block">
             <div class="form__entry entry_block">
               <div class="form__label-row ">
 
                 <div class="entry__field">
-                  <input class="input " maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="First Name" style="color:#000000;"/>
+                  <input class="input " maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="off" placeholder="First Name" color:"#000000;" />
                 </div>
               </div>
 
@@ -240,7 +215,7 @@
               <div class="form__label-row ">
 
                 <div class="entry__field">
-                  <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email (Mandatory)" style="color:#000000;" data-required="true" required />
+                  <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email" color:"#000000;" data-required="true" required />
                 </div>
               </div>
 
@@ -269,9 +244,6 @@
     </div>
   </div>
 </div>
-
-  <!-- ✅ ConvertKit Embed Script 
-  <script async data-uid="37da9d862c" src="https://thenightschool.kit.com/37da9d862c/index.js"></script> -->
 
 
   <!-- old social media links 
